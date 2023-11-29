@@ -78,3 +78,7 @@ h1.title {
 p.title {
   color: map.get($main-theme, "gray");
 }
+
+.container {
+  margin-bottom: 20px !important;
+}

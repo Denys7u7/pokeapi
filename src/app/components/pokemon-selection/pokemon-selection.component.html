@@ -35,8 +35,8 @@
           <td>Edad:</td>
           <td>{{ ageCalculated }}</td>
         </tr>
-        <tr>
-          <td>DUI:</td>
+        <tr *ngIf="profile['document'] != ''">
+          <td>{{ ageCalculated! < 18 ? "Carnet de minoridad" : "DUI" }}</td>
           <td>{{ profile["document"] }}</td>
         </tr>
       </table>
